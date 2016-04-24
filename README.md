@@ -3,7 +3,7 @@ Docker Container Template of FFA's IMS
 ```Dockerfile
 #Update and install required packages
 RUN apt-get update
-RUN apt-get -y install php5-curl php5-cli git
+RUN apt-get -y install php5-curl php5-cli git php5-mysql
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer 
 
 #Clears the root directory and puts admin files in the webmin folder
